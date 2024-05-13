@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Webd = () => {
+const Webd = () => {
     return (
         <div>Webd</div>
     )

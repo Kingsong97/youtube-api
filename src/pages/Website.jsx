@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Website = () => {
+const Website = () => {
     return (
         <div>Website</div>
     )

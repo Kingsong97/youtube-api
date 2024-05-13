@@ -14,23 +14,31 @@ import Video from './pages/Video'
 import Search from './pages/Search'
 import Not from './pages/Not'
 
+import Header from './components/section/Header'
+import Footer from './components/section/Footer'
+import Main from './components/section/Main'
+
 const App = () => {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/today' element={<Today />} />
-        <Route path='/developoer' element={<Developoer />} />
-        <Route path='/webd' element={<Webd />} />
-        <Route path='/website' element={<Website />} />
-        <Route path='/gsap' element={<Gsap />} />
-        <Route path='/port' element={<Port />} />
-        <Route path='/Youtube' element={<Youtube />} />
-        <Route path='/channel' element={<Channel />} />
-        <Route path='/video' element={<Video />} />
-        <Route path='/search' element={<Search />} />
-        <Route path='/*' element={<Not />} />
-      </Routes>
+      <Header />
+      <Main>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/today' element={<Today />} />
+          <Route path='/developoer' element={<Developoer />} />
+          <Route path='/webd' element={<Webd />} />
+          <Route path='/website' element={<Website />} />
+          <Route path='/gsap' element={<Gsap />} />
+          <Route path='/port' element={<Port />} />
+          <Route path='/Youtube' element={<Youtube />} />
+          <Route path='/channel' element={<Channel />} />
+          <Route path='/video' element={<Video />} />
+          <Route path='/search' element={<Search />} />
+          <Route path='/*' element={<Not />} />
+        </Routes>
+      </Main>
+      <Footer />
     </BrowserRouter>
   )
 }
