@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Main = () => {
+const Main = (props) => {
     return (
         <main id="main" role='main'>
-            main
+            {props.children}
         </main>
     )
 }
